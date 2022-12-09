@@ -9,7 +9,7 @@ from torch_geometric.transforms import LineGraph
 from torch_scatter import scatter_add
 from argparse import ArgumentParser
 from torch.utils.tensorboard import SummaryWriter
-from model_zoo import NodeEdgeAggregatorV4 as Model
+from model_zoo.NodeEdgeAggregator import NodeEdgeAggregatorV4 as Model
 from torchmetrics import Accuracy, AUROC, Precision, Recall
 import mlflow
 import mlflow.pytorch
