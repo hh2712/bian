@@ -61,7 +61,7 @@ do
       gpu_id=-1
       find_gpu 1
       echo $h $d $run
-      python -m scripts.train_node_edge_agg_v2 --hidden_size $h --dropout $d --device $gpu_id
+      python -m scripts.train_node_edge_agg_v2 --dataset DGraphFin --dataset_dir /data/huhy/datasets/ --batch_size 512 --hidden_size $h --dropout $d --device $gpu_id
     done
   done
 done

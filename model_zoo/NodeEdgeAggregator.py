@@ -3,7 +3,7 @@ from torch import nn
 import torch.nn.functional as F
 from torch_geometric.nn import GATConv
 from model_zoo.timespan_model import TSAEncoder, TSAEncoderV2
-from model_zoo import EdgeToNodeConv
+from model_zoo.EdgeToNodeConv import EdgeToNodeConv
 from torch_geometric.nn import Linear
 from model_zoo.baseline.sage import SAGE
 from model_zoo.MixAttention import MixAttention
